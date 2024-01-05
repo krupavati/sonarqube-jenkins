@@ -1,0 +1,413 @@
+.firstRow{
+		background-color: #84C9FF ;
+		 box-shadow: 10px 10px 5px #888888;
+		 border: 1px solid black;
+		}
+		
+.secondrow{
+		background-color: #FFAC8c;
+		 box-shadow: 10px 10px 5px #888888;
+		 border: 1px solid black;
+		}
+		.green{
+		background-color: #57DA6A;
+		 box-shadow: 10px 10px 5px #888888;
+		  border: 1px solid black;
+		}
+		.red{
+		background-color: #FE4E50;
+		 box-shadow: 10px 10px 5px #888888;
+		  border: 1px solid black;
+		}
+		.amber{
+		background-color: #FEC200 ;
+		 box-shadow: 10px 10px 5px #888888;
+		  border: 1px solid black;
+		}
+		
+		.linkFont{
+	color: black !important;
+	/* font-weight: bold; */
+	}
+	#imageBG{
+	background-image: url("images/background.PNG");
+	background-repeat: no-repeat;
+background-size:100% 100%;
+}
+
+.scrollContainer{
+	margin-left: 10%;
+	
+}
+.labelCOlor{
+	color: black;
+	font-weight: bold;
+}
+.border{
+	border: 1px solid pink;
+}
+.buttonPull{
+	 position:absolute;
+    top:62%;
+    left:10%;
+    bottom:0px;
+    right:0px;
+    z-index: 9999999;
+	
+}
+.searchButton{
+	 position:absolute;
+    top:82%;
+    left:45%;
+    bottom:0px;
+    right:0px;
+    z-index: 9999999;
+	
+}
+.searchButton .sapMBtnInner{
+	border-radius: 1.2rem !important;
+}
+.kpiButton .sapMBtnInner{
+	border-radius: 1.2rem !important;
+}
+.kpiOject{	
+	/* height: 3rem; */
+}
+.kpitabel .sapMLIBShowSeparator>td{
+	background: white !important;
+	
+	border-right: 1px solid #cccccc !important;
+}
+.kpitabel .sapMListTblHeaderCell{
+    background-color: rgb(153,153,153) !important;
+}
+.kpitabel .sapMListTblHeaderCell>span{
+   color: white !important;
+}
+
+.sapMSFI {
+    color: black !important;
+    }
+    
+    .sapMScrollCont {
+        overflow-y: auto !important;
+    }
+.kpiButton{
+	 position:absolute;
+    top:82%;
+    left:52%;
+    bottom:0px;
+    right:0px;
+    z-index: 9999999;
+	
+}
+#overlay{
+  border:1px solid black;
+  width:350px;
+  height:200px;
+  display:inline-block;
+  background-image:url('images/ProcessScreen.JPG');
+  background-repeat:no-repeat;
+  
+}
+.buttonPull>.sapMBtnInner{
+	background : none !important;
+	height: 4.1rem !important;
+	border: none ! important;
+} 
+
+.textPull{
+	margin-top: 18% !important;
+	font-size: 1rem !important;
+}
+
+.textPull1{
+	margin-top: 12% !important;
+}
+.mainPanel{
+	margin-left: 20%;
+}
+.buttonPull1{
+	margin-left: 39%;
+}
+
+.eccLabel{
+		margin-left: 40%;
+		}
+		.firstRow{
+		background-color: #84C9FF ;
+		 box-shadow: 10px 10px 5px #888888;
+		}
+		.firstRow>textarea{
+		background-color: blue;
+		}
+		.green{
+		background-color: #57DA6A;
+		 box-shadow: 10px 10px 5px #888888;
+		}
+		.red{
+		background-color: #FE4E50;
+		 box-shadow: 10px 10px 5px #888888;
+		}
+		.yellow{
+		background-color: #FEC200 ;
+		 box-shadow: 10px 10px 5px #888888;
+		}
+		.secondrow{
+		background-color: #FFAC8c;
+		 box-shadow: 10px 10px 5px #888888;
+		}
+		.headerTool{
+		background-color: blue;
+		}
+	.headerText{
+	color: white !important;
+	margin-left: 47% !important;
+	}
+	.popUpHeader{
+	background-color: white;
+	border-bottom: 1px solid blue;
+	}
+	.popUpheaderText{
+	color: red !important;
+	}
+	.linkFont{
+	font-size: .8rem !important;
+	}
+	.linkFont{
+	color: black !important;
+	font-weight: bold;
+	}
+	.linkFont1{
+	color: black !important;
+	font-weight: bold;
+	}
+	.headerImage{
+	border-bottom: 6px solid #FEC101;	
+	}
+	.headerImage1{
+	border: 6px solid #FEC101;	
+	}
+	.firstHboxBG{
+	background-color: #BEFEE3 !important;
+	padding: 8px !important;
+	}
+	.toolFunctionBG{
+	background-color: #BEFEE3 !important;
+	}
+	.secondHboxBG{
+	background-color: #CFD2FE !important;
+	padding: 8px !important;
+	}
+	.toolBuisnessBG{
+	background-color: #CFD2FE !important;
+	}
+	.thirdHboxBG{
+	background-color: #A6D7FF !important;
+	padding: 8px !important;
+	}
+	.toolSubBG{
+	background-color: #A6D7FF !important;
+	}
+	.fourthHboxBG{
+	background-color: #FEAC8D !important;
+	padding: 8px !important;
+	}
+	.toolCriticalBG{
+	background-color: #FEAC8D !important;
+	}
+	.fifthHboxBG{
+	background-color: #FEF2B6 !important;
+	padding: 8px !important;
+	}
+	.toolRCABG{
+	background-color: #FEF2B6 !important;
+	}
+	.buttonPadding{
+	padding-top: 12px !important;
+	}
+	.headerLabels{
+	color: black !important;
+	font-size: 1rem;
+	}
+	.mainPanel .sapMPanelBGTranslucent {
+    background-color: transparent !important;
+	}
+	.secondPageBG{
+	background: url("../images/Cover-bg.png") !important;
+	background-color: white !important;
+	}
+	.searchPopup{
+	border: 5px solid #CFD2FE;
+	}
+	
+	.LabelColor{
+	color: #2E3192 !important; 
+	}
+	
+.buttonPull1>div{
+	text-shadow: 0 0px 0 #ffffff !important;
+    background-color: #2E3192 !important;
+    background: #2E3192 !important;
+    color: white;
+    font-family: Calibri;
+    font-size: 1.4em;
+    font-weight: 500;
+    border-radius: 1rem;
+    width: 9rem;
+	
+} 
+	.inputHeight>div{
+	height: 4rem !important;
+	}
+	
+	
+	.PFHeaderText{
+	 position:absolute;
+    top:1%;
+    left:2%;
+    z-index: 9999999;
+	}
+	.ORLabel{
+	text-align: center !important;
+	color: #2E3192 !important; 
+	}
+	.zeroHboxBG{
+	background-color: #c1dfd2 !important;
+	padding: 8px !important;
+	}
+	.Headertoolbar{
+	background-color: blue !important;
+	}
+	.PFHeaderrText{
+	position:absolute;
+    top:50%;
+    left:115%;
+    
+    z-index: 9999999;
+	}
+	.PFheaderText{
+	color: white !important;
+	}
+	.PFheaderText1{
+	font-size: 2rem !important;
+	}
+	.PFtoolbarBorder{
+	border-bottom: 0px !important;
+	}
+	.PFpanel{
+	margin-left: 10%;
+	}
+	
+	.PFpanel .sapMPanelBGTranslucent {
+background-color: transparent !important;
+background-image: url("./images/body-bg.png") !important;
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+	.PFlabelFont{
+	font-size: 2rem !important;
+	font-weight: bold;
+	}
+	.PFmainPage{
+	background-color: #f8f8f7 !important;
+	}
+	.searchPopup{
+	background-color: #BEFEE3 !important;
+	}
+	
+	/* process flow pop up */
+	.columnBorder .sapMListTblCell {
+	/* border-right: 1px solid white; */
+	background-color: #662E91 !important;
+	}
+	.columnBorderT2 .sapMListTblHeaderCell {
+	border-right: 1px solid #652D92;
+	background-color: #F1F1F1 !important;
+	}
+	.columnBorderT2 .sapMListTblCell {
+	border-right: 1px solid #652D92;
+	}
+	.columnBorderT2 {
+	background-color: white !important;
+	}
+	.columnBorder{
+	padding-bottom: 0 !important;
+	}
+	.columnBorderT2{
+	padding-top: 0 !important;	
+	}
+	.t1headerText{
+	color: white !important;
+	}
+	.t2TextColor{
+	color: #0153A5 !important;
+	font-weight: 600 !important;
+	}
+	.imageClass{
+	 border-radius: 1rem;
+	}
+	.hboxSearch{
+	margin-top: 10%;
+	margin-left: 25%;
+	}
+	.sapMTB{
+	border-bottom: none !important;
+	}
+	.inputDisable{
+	pointer-events: none !important;	
+	}
+	
+	
+	.showError .sapMSFF{
+	border: 1px solid #da2222 !important;
+    background: #e89c9c !important;
+	}
+	.errorPOPup{
+	background-color: #E89C9C !important;
+	}
+	
+	.timerTitle {
+  margin:1px;
+  text-align:center !important;
+  padding-top: 10px;
+  color: #228B22 !important;
+  background-color: #f7f7f7;
+  width: 120px;
+  border: none
+}
+ 
+.timerSLAExceeded {
+  margin:1px;
+  text-align:center !important;
+  padding-top: 10px;
+  color: #FF4500 !important;
+  width: 130px;
+  border: none
+}
+ 
+.timerFace {
+  margin:1px;
+  width: 40px;
+  border: none;
+  font-size: 1rem;
+  height: 35px;
+  padding-top: 10px;
+  text-align:center !important;
+  color: #000;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+}
+ 
+.timerFaceSep {
+  width: 10px;
+  border: none;
+  font-size: 1rem;
+  height: 35px;
+  padding-top: 10px;
+  text-align:center !important;
+  color: #666;
+}
+	
+	

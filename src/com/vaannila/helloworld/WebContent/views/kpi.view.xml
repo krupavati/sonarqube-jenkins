@@ -1,0 +1,172 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:l ="sap.ui.layout" controllerName="PF.controllers.kpi" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" class="secondPageBG" showHeader="false">
+		<content>
+		<Image xmlns="sap.m" class="headerImage"
+	src="images/header.png"
+	width="100%"
+	height=""
+	decorative="true"
+	>
+</Image>
+<HBox class="PFHeaderText">
+<Panel xmlns="sap.m" class="headerImage1"
+	backgroundDesign="Solid"
+	expand="">
+		<content>
+		<Image xmlns="sap.m"  
+	src="images/Unilever-logo.png"
+	width="5rem"
+	height="5rem"
+	decorative="true"
+	>
+</Image>
+		</content>
+</Panel>
+
+
+<VBox class="PFHeaderrText">
+<Label text="UNILEVER IMMUNE SYSTEM" class="PFheaderText PFheaderText1"/>
+
+</VBox>
+</HBox>
+<ScrollContainer xmlns="sap.m"
+	height="80%"
+	horizontal="false"
+	vertical="true"
+	focusable="false">
+		<content>
+		
+		<VBox
+		id="idVBox">
+		<items>
+ <Toolbar>
+			<Button xmlns="sap.m" icon="sap-icon://home"
+	type="Default"
+	press="homePressed">
+</Button>
+			<ToolbarSpacer />
+			<ToolbarSpacer />
+			<ToolbarSpacer />
+				<Title text="LIST OF OPEN INCIDENTS" level="H2"/>
+				<ToolbarSpacer />
+				<ToolbarSpacer />
+				<Label text="" id="idTimerLabel" class="sapUiSmallMarginEnd"/>
+			</Toolbar>
+			<FacetFilter
+				id="idFacetFilter"
+				type="Light"
+				showPersonalization="false"
+				showReset="true"
+				showSummaryBar="false"
+				reset="handleFacetFilterReset"
+				lists="{kpiFilter>/filter}">
+				<lists>
+					<FacetFilterList
+						title="{kpiFilter>type}"
+						items="{kpiFilter>value}"
+						listClose="handleConfirm" >
+						<items>
+							<FacetFilterItem
+								text="{kpiFilter>text}"
+								 />
+						</items>
+					</FacetFilterList>
+				</lists>
+			</FacetFilter>
+		<Table id="idProductsTable" itemPress="tableItemPressed" class="kpitabel" enableBusyIndicator="true" showSeparators="All"
+		inset="false"
+		items="{kpiPagemodel>/data}">
+		<headerToolbar>
+			
+		</headerToolbar>
+		<columns>
+			<Column
+				width="20%">
+				<Text text="SUMMARY" />
+			</Column>
+			<Column width="20%"
+				>
+				<Text text="IDENTIFIER" />
+			</Column>
+			<Column width="10%"
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="SUB PROCESS" />
+			</Column>
+			<Column width="10%"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				>
+				<Text text="PROCESS" />
+			</Column>
+			<Column width="12%"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				>
+				<Text text="OPEN INCIDENTS" />
+			</Column>
+			<Column width="10%"
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="PRIORITY" />
+			</Column>
+			<Column width="10%"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				>
+				<Text text="ALERT GROUP" />
+			</Column>
+			<Column width="8%"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				>
+				<Text text="LANDSCAPE" />
+			</Column>
+			<Column width="10%"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				>
+				<Text text="PRODUCTION IMPACT" />
+			</Column>
+			<Column width="10%"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="SALES LOSS (EURO)" />
+			</Column>
+			
+		</columns>
+		<items>
+		
+			<ColumnListItem type="Active">
+				<cells>
+					<ObjectIdentifier class="kpiOject"						
+						text="{kpiPagemodel>Summary}"/>
+					<ObjectIdentifier class="kpiOject"						
+					text="{kpiPagemodel>Identifier}"/>
+					<Text text="{kpiPagemodel>Subtask}" />
+					<Text text="{kpiPagemodel>Process}" />
+					<Text text="{kpiPagemodel>Incident}" />
+					<Text text="{kpiPagemodel>Priority}" />
+					<Text text="{kpiPagemodel>AlertGroup}" />
+					<Text text="{kpiPagemodel>Landscape}" />
+					<Text text="{kpiPagemodel>Impact}" />
+					<Text text="{kpiPagemodel>BuisnessImpact}" />
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	</items>
+	</VBox>
+		</content> <!-- sap.ui.core.Control -->
+</ScrollContainer>
+
+	
+
+
+
+		</content>
+	</Page>
+</core:View>

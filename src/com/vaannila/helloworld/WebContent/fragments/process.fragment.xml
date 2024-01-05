@@ -1,0 +1,142 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Dialog xmlns="sap.m" title="" stretch="false" showHeader="false" afterOpen="colorRow"
+   class="sapUiNoContentPadding">
+    <content>
+    <Toolbar xmlns="sap.m" class="popUpHeader"
+	width="100%" 
+	active="false"
+	enabled="true"
+	height="3rem"
+	design="Auto">
+		<content>
+		<ToolbarSpacer />
+		<Label text="PROCESS INFORMATION" class="popUpheaderText" id="idInfoDiaHeader"/>
+		<ToolbarSpacer />
+		</content> 
+</Toolbar>
+
+ <Panel>              	      
+	<Table  width="160rem" id="tableid12" showNoData="false">
+        <columns>
+                      <Column width="10rem" hAlign="Begin"  demandPopin="true">
+                  <Text text="UIS code"  class="t2TextColor"/>
+              </Column>
+              <Column width="10rem" hAlign="Begin"  demandPopin="true">
+                  <Text text='Business Scenario' class="t2TextColor"/>
+              </Column>
+              <Column width="10rem" hAlign="Begin"  demandPopin="true">
+                 <VBox>
+                  <Text text="Critical Process"  class="t2TextColor"/>
+                  <Text text="(Identify and Prioritize the critial processes in your function) "  class="t2TextColor"/>
+                 </VBox>
+              </Column>
+              
+              
+              <Column width="15rem" hAlign="Begin"  demandPopin="true">
+                  <Text text="Transactions Involved"  class="t2TextColor"/>
+              </Column>
+               <Column width="15rem" hAlign="Begin" demandPopin="true">
+                  <Text text="Critical Application and System log to be monitored"  class="t2TextColor"/>
+              </Column>
+              
+              
+               <Column width="10rem" hAlign="Begin" demandPopin="true">
+                  <Text text="Monitoring Mechanisms"  class="t2TextColor"/>
+              </Column>
+              
+              
+              <Column width="15rem" hAlign="Begin"  demandPopin="true">
+                 <VBox>
+                  <Text text="Symptoms"  class="t2TextColor"/>
+                  <Text text="(Identify and  Prioritize all the symptoms suggesting failure in the processes identified in coumn B )"  class="t2TextColor"/>
+                 </VBox>
+              </Column>
+              <Column width="15rem" hAlign="Begin"  demandPopin="true">
+                 <VBox>
+                  <Text text="RCA"  class="t2TextColor"/>
+                  <Text text="(Identify and prioritize all the root cause that would lead to symptoms identified in column C)"  class="t2TextColor"/>
+                 </VBox>
+              </Column>
+              
+              <Column width="20rem" hAlign="Begin"  demandPopin="true">
+                  <Text text="Comments (Troubleshooting guide)"  class="t2TextColor"/>
+              </Column>
+              <Column width="10rem" hAlign="Begin" demandPopin="true">
+                  <Text text="Monitoring Object"  class="t2TextColor"/>
+              </Column>
+              <Column width="10rem" hAlign="Begin"  demandPopin="true">
+                  <Text text="Monitoring Mechanism"  class="t2TextColor"/>
+              </Column>
+              <Column width="10rem" hAlign="Begin" demandPopin="true">
+                  <Text text="Business Impact"  class="t2TextColor"/>
+              </Column>
+        </columns>
+         </Table>     
+  <ScrollContainer 
+  height="400px"
+  width="165rem"
+  vertical="true"
+  horizontal="false">
+		<content>      
+        	<Table width="160rem"  id="tableid"
+       class="columnBorderT2" modal="true"
+        growing="true" growingThreshold="100" items="{tableModel>/}">
+                        <columns >
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="15rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="15rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="15rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="15rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="20rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                  <Column width="10rem" hAlign="Begin" demandPopin="true">                  </Column>
+                </columns>
+        <items>
+          <ColumnListItem >
+            <cells>
+            
+            <Text text="{tableModel>Uiscode}"  class="t2TextColor"/>    
+            <Text text="{tableModel>Busscenario}"  class="t2TextColor"/>
+            <Text text="{tableModel>Criticalpro}"  class="t2TextColor"/>
+            <Text text="{tableModel>TrnInvolved}"  class="t2TextColor"/>
+            <Text text="{tableModel>CrtSyslog}"  class="t2TextColor"/>
+            <Text text="{tableModel>MntrMech}"  class="t2TextColor"/>
+            <Text text="{tableModel>Symptoms}"  class="t2TextColor"/> 
+	        <Text text="{tableModel>Rca}"  class="t2TextColor"/>
+	        <Text text="{tableModel>Comments}"  class="t2TextColor"/>  
+	        <Text text="{tableModel>MonitoringObj}"  class="t2TextColor"/> 
+	        <Text text="{tableModel>MntrType2}"  class="t2TextColor"/> 
+	        <Text text="{tableModel>BussImpact}"  class="t2TextColor"/>    
+		    </cells>
+          </ColumnListItem>
+        </items>
+       
+      </Table>
+
+  </content> <!-- sap.ui.core.Control -->
+</ScrollContainer>
+      </Panel>
+    </content>
+    <buttons> 
+    <Button xmlns="sap.m" icon="sap-icon://download"
+	text="Download"
+	type="Default"
+	press="handleExportToExcel">
+</Button>
+<Button xmlns="sap.m" icon="sap-icon://decline"
+	text="Close"
+	type="Default"
+	press="closeProcessPressed">
+</Button>
+
+
+		</buttons>
+
+  </Dialog>
+</core:FragmentDefinition>

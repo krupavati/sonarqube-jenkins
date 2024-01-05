@@ -1,0 +1,108 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Dialog xmlns="sap.m" title="KPI list" stretch="false" showHeader="false" id="linkpopFragment"
+   class="sapUiNoContentPadding">
+    <content>
+    <Toolbar xmlns="sap.m" class="popUpHeader"
+	width="100%" 
+	active="false"
+	enabled="true"
+	height="3rem"
+	design="Auto">
+		<content>
+		<ToolbarSpacer />
+		<Label id="idUISheader" text="Alerts" class="popUpheaderText"/>
+		<ToolbarSpacer />
+		<HBox>
+<Label id="timerTitle" text="Time Remaining" class="timerTitle"/>
+<Text id="hrsLeft" class="timerFace"></Text>
+<Text text=":" class="timerFaceSep" id="idDivider"></Text>
+<Text id="minLeft" class="timerFace"></Text>
+<Text id="secLeft" class="timerFace"></Text>
+</HBox>
+		<Button xmlns="sap.m" icon="sap-icon://hint"
+		text=""
+		type="Default"
+		press="openInfoPressed">
+	</Button>
+	
+	<Button xmlns="sap.m" icon="images/Skype.png"
+	text=""
+	type="Default"
+	press="skypeForBusinessPressed">
+</Button>
+		</content> 
+</Toolbar>
+
+
+
+	 <Table  class="" items="{UISDetailModel>/DataForAlertPopUp}"
+        inset="true" modal="true"
+        growing="true" growingThreshold="100">
+        <columns>
+              <Column width="auto" hAlign="Begin" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="Identifier" class=""/>
+              </Column>
+              <Column width="auto" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="TicketID"  class=""/>
+              </Column>
+
+              <Column width="auto" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="SUMMARY"  class=""/>
+              </Column>
+        </columns>
+        <items>
+          <ColumnListItem >
+            <cells>
+              <Text text="{UISDetailModel>Identifier}" class=""   />
+              <Text  text="{UISDetailModel>TicketID}" />
+				<Text  text="{UISDetailModel>Summary}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+       
+      </Table> 
+      
+      <Toolbar xmlns="sap.m"
+	width=""
+	active="false"
+	enabled="true"
+	height=""
+	design="Auto"
+	press="">
+		<content>
+		<Label text="RCA" class="sapUiSmallMarginBegin"/>
+		</content> <!-- sap.ui.core.Control -->
+</Toolbar>
+
+<List xmlns="sap.m" items="{UISDetailModel>/rca}">
+		<DisplayListItem xmlns="sap.m"
+	label="{UISDetailModel>rcalabel}"
+	>
+</DisplayListItem>		
+</List>
+
+
+  
+      
+    </content>
+    <buttons> 
+   <!--  <Button xmlns="sap.m"
+	text="RESET"
+	type="Default"
+	press="resetPressed">
+		<tooltip></tooltip> sap.ui.core.TooltipBase
+		<dependents></dependents> sap.ui.core.Control, since 1.19
+</Button> -->
+<Button xmlns="sap.m"
+	text="Close"
+	type="Default"
+	press="closepopUpPressed">
+</Button>
+
+
+		</buttons>
+
+  </Dialog>
+</core:FragmentDefinition>

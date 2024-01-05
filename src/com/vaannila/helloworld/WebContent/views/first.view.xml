@@ -1,0 +1,283 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:l ="sap.ui.layout" controllerName="PF.controllers.first" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" class="secondPageBG" 	showHeader="false">
+		<content>
+		<Image xmlns="sap.m" class="headerImage"
+	src="images/header.png"
+	width="100%"
+	height=""
+	decorative="true"
+	>
+</Image>
+<HBox class="PFHeaderText">
+<Panel xmlns="sap.m" class="headerImage1"
+	backgroundDesign="Solid"
+	expand="">
+		<content>
+		<Image xmlns="sap.m"  
+	src="images/Unilever-logo.png"
+	width="5rem"
+	height="5rem"
+	decorative="true"
+	>
+</Image>
+		</content>
+</Panel>
+
+
+<VBox class="PFHeaderrText">
+<Label text="UNILEVER IMMUNE SYSTEM" class="PFheaderText PFheaderText1"/>
+
+</VBox>
+</HBox>
+<Toolbar xmlns="sap.m"
+	>
+		<content>
+		<Button xmlns="sap.m" icon="sap-icon://home"
+	type="Default"
+	press="homePressed">
+</Button>
+		</content> <!-- sap.ui.core.Control -->
+</Toolbar>
+
+	<Panel xmlns="sap.m" class="mainPanel"
+	width="60%">
+		<content>
+		<l:Grid defaultSpan="L12 M12 S12" class="border1">
+        <l:content>
+		<VBox >
+		<items>
+		<HBox class="sapUiLargeMarginBegin">
+		<items>
+		<Label text="UIS CODE*" class="headerLabels textPull"></Label>
+		<!-- <Input xmlns="sap.m" height="1rem" class="inputHeight"
+		id="idUISInput"
+		width="23rem">
+		</Input> -->
+		<SearchField xmlns="sap.m" class="inputHeight sapUiSmallMarginBegin" placeholder="SEARCH UIS CODE"
+	id="idUISInput" showSearchButton="false"
+	value=""
+	 width="34rem"
+	enabled="true" liveChange="uisLivechange"
+	showMagnifier="false"
+	></SearchField>
+		<Button xmlns="sap.m" class=""
+		text="GO" type="Emphasized"
+			press="uisGoPressed">
+		</Button>
+		</items>
+	</HBox>
+		</items> 
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</VBox>	
+		<Toolbar xmlns="sap.m" class=""
+	width="100%"
+	active="false"
+	enabled="true"
+	height="auto"
+	design="Auto"
+	press="">
+		<content>
+		<Label class="LabelColor" text="-----------------------------------------------------------------------"/>
+		<Label  text="OR" class="ORLabel"/>
+		<Label class="LabelColor" text="------------------------------------------------------------------------"/>
+			</content> <!-- sap.ui.core.Control -->
+			</Toolbar>
+
+		<HBox class="sapUiLargeMarginBegin" >
+		
+		<HBox class="zeroHboxBG">
+		
+		<Text xmlns="sap.m" width="6rem" maxLines="2" wrapping="true" class="textPull"
+			text="TEMPLATE" >
+		</Text>
+		
+		<SearchField xmlns="sap.m" class="inputHeight " placeholder="SEARCH LANDSCAPE"
+	id="idInput0" showSearchButton="false"
+	value=""
+	 width="34rem"
+	enabled="true"
+	showMagnifier="false"
+	>
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SearchField>
+		</HBox>
+		<Button xmlns="sap.m" class="sapUiTinyMarginBegin buttonPadding"
+	type="Emphasized" id="idButton0"
+	enabled="true"
+	icon="sap-icon://menu2"
+	press="searchButtonPressed">
+</Button>
+
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</HBox>	
+		 
+		<HBox class="sapUiLargeMarginBegin" >
+		
+		<HBox class="firstHboxBG">
+		
+		<Text xmlns="sap.m" width="6rem" maxLines="2" wrapping="true" class="textPull"
+			text="FUNCTION" >
+		</Text>
+		
+		<SearchField xmlns="sap.m" class="inputHeight " placeholder="SEARCH FUNCTION"
+	id="idInput1" showSearchButton="false"
+	value=""
+	 width="34rem"
+	enabled="true"
+	showMagnifier="false"
+	>
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SearchField>
+		</HBox>
+		<Button xmlns="sap.m" class="sapUiTinyMarginBegin buttonPadding"
+	type="Emphasized" id="idButton1"
+	enabled="true"
+	icon="sap-icon://menu2"
+	press="searchButtonPressed">
+</Button>
+
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</HBox>
+		
+		<HBox class="sapUiLargeMarginBegin">
+		<HBox class="secondHboxBG">
+		
+		<Text xmlns="sap.m" width="6rem" maxLines="2" wrapping="true" class="textPull1"
+			text="BUSINESS PROCESS">
+		</Text>
+		<SearchField xmlns="sap.m" class="inputHeight " placeholder="SEARCH BUSINESS PROCESS"
+	id="idInput2" showSearchButton="false"
+	value=""
+	 width="34rem"
+	enabled="true"
+	showMagnifier="false"
+	>
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SearchField>
+		</HBox>
+		<Button xmlns="sap.m" class="sapUiTinyMarginBegin buttonPadding"
+	type="Emphasized" id="idButton2"
+	enabled="true"
+	icon="sap-icon://menu2"
+	press="searchButtonPressed">
+</Button>
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</HBox>
+		
+		<HBox class="sapUiLargeMarginBegin">
+			<HBox class="thirdHboxBG">
+		
+		<Text xmlns="sap.m" width="6rem" maxLines="2" wrapping="true" class="textPull1"
+			text="SUB PROCESS*">
+		</Text>
+		
+
+		<SearchField xmlns="sap.m" class="inputHeight " placeholder="SEARCH SUB PROCESS"
+	id="idInput3" showSearchButton="false" liveChange="removeError"
+	value=""
+	 width="34rem"
+	enabled="true"
+	showMagnifier="false"
+	>
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SearchField>
+		</HBox>
+		<Button xmlns="sap.m" class="sapUiTinyMarginBegin buttonPadding"
+	type="Emphasized" id="idButton3"
+	enabled="true"
+	icon="sap-icon://menu2"
+	press="searchButtonPressed">
+</Button>
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</HBox>
+		
+		<HBox class="sapUiLargeMarginBegin ">
+		<HBox class="fourthHboxBG">
+		
+		<Text xmlns="sap.m" width="6rem" maxLines="2" wrapping="true" class="textPull1"
+			text="CRITICAL TASK">
+		</Text>
+		
+		<SearchField xmlns="sap.m" class="inputHeight " placeholder="SEARCH CRITICAL TASK"
+	id="idInput4" showSearchButton="false"
+	value=""
+	 width="34rem"
+	enabled="true"
+	showMagnifier="false"
+	>
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SearchField>
+		</HBox>
+		<Button xmlns="sap.m" class="sapUiTinyMarginBegin buttonPadding"
+			type="Emphasized" id="idButton4"
+			enabled="true"
+			icon="sap-icon://menu2"
+			press="searchButtonPressed">
+		</Button>
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</HBox>
+		
+		<HBox class="sapUiLargeMarginBegin">
+		<HBox class="fifthHboxBG">
+		
+		<Text xmlns="sap.m" width="6rem" maxLines="2" wrapping="true" class="textPull"
+			text="RCA">
+		</Text>
+		
+		<SearchField xmlns="sap.m" class="inputHeight " placeholder="SEARCH RCA"
+	id="idInput5" showSearchButton="false"
+	value=""
+	 width="34rem"
+	enabled="true"
+	showMagnifier="false"
+	>
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SearchField>
+		</HBox>
+		<Button xmlns="sap.m" class="sapUiTinyMarginBegin buttonPadding"
+		type="Emphasized" id="idButton5"
+			enabled="true"
+			icon="sap-icon://menu2"
+			press="searchButtonPressed">
+		</Button>
+		<layoutData>
+                    <l:GridData span="L12 M12 S12" />
+        </layoutData>
+		</HBox>
+		<Button xmlns="sap.m" class="buttonPull1"
+	text="SEARCH"
+	
+	press="navToProcess">
+		</Button>
+		
+		
+		</l:content>
+		</l:Grid>
+		</content> <!-- sap.ui.core.Control -->
+</Panel>
+
+
+
+
+		</content>
+	</Page>
+</core:View>

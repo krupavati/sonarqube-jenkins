@@ -1,0 +1,135 @@
+{
+	"_version": "1.3.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "PF",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "title",
+		"description": "desc",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.38.5",
+		"rootView": {
+			"viewName": "PF.views.app",
+			"type": "XML"
+		},
+		"handleValidation": true,
+		"autoPrefixId": true,
+		"dependencies": {
+			"minUI5Version": "1.34",
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.34.0"
+				},
+				"sap.m": {
+					"minVersion": "1.34.0"
+				},
+				"sap.ui.layout": {
+					"minVersion": "1.34.0"
+				}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "PF.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/styleSheet.css"
+			}],
+			"js": [
+				{
+					"uri": "js/underscore.js"
+				}
+			]
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "PF.views",
+				"controlId": "appId",
+				"controlAggregation": "pages",
+				"transition": "flip",
+				"clearTarget": "true",
+				"bypassed": {
+					"target": "notFound"
+				}
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "appHome",
+				"target": "cover"
+			},
+			{
+				"pattern": "searchPage",
+				"name": "searchPage",
+				"target": "first"
+			},
+			{
+				"pattern": "ProcessFlow/{process}",
+				"name": "first",
+				"target": "main"
+			},
+			{
+				"pattern": "KPIPage",
+				"name": "KPIPage",
+				"target": "KPIPage"
+			},
+			{
+				"pattern": "Menu",
+				"name": "Menu",
+				"target": "Menu"
+			}],
+			"targets": {
+				"main": {
+					"viewName": "main",
+					"viewLevel": 2
+				},
+				"cover": {
+					"viewName": "cover",
+					"viewLevel": 2
+				},
+				"first": {
+					"viewName": "first",
+					"viewLevel": 1
+				},
+				"KPIPage": {
+					"viewName": "kpi",
+					"viewLevel": 4
+				},
+				"Menu": {
+					"viewName": "search_view",
+					"viewLevel": 4
+				}
+			}
+
+
+		}
+	}
+} 

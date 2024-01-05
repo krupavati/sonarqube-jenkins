@@ -1,0 +1,41 @@
+{
+ "popUpheader": "Function Search",
+  "data": [{
+    "process":"CLM",
+    "subprocess": "Purchase contract creation process",
+    "kpi": "Purchase contract creation process 1"
+  }, {
+    "process":"CLM",
+    "subprocess": "Purchase contract creation process",
+    "kpi": "Purchase contract creation process 1"
+  }, {
+    "process":"ECC",
+    "subprocess": "Interface contract to ECC",
+    "kpi": "scheduling 1"
+  },{
+    "process":"ECC",
+    "subprocess": "Interface contract to ECC",
+    "kpi": "source list 1"
+  }, {
+   "process":"ECC",
+    "subprocess": "Procurement process in ECC",
+    "kpi": "scheduling 2"
+  }, {
+   "process":"ECC",
+    "subprocess": "Procurement process in ECC",
+    "kpi": "Inbound Delivery Creation"
+  }, {
+    "process":"ECC",
+    "subprocess": "Procurement process in ECC",
+    "kpi": "Delivery sent to OTM"
+  }, 
+  {
+    "process":"OTM",
+    "subprocess": "-",
+    "kpi": "-"
+  } ,{
+    "process":"ECC 2",
+    "subprocess": "ECC Receiving process",
+    "kpi": "Good Receipt"
+  } ]
+}

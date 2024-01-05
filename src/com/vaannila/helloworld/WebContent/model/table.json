@@ -1,0 +1,63 @@
+{
+	"data": [{
+		"col1": "Production Master Data",
+		"col2": "Production Master Data- Bill of Materials",
+		"col3": "CS01/CS02/CS03",
+		"col4": "Input: Material Number - header level Plant Number, BOM Usage Output: BoM created/ changed Bill of Material is recursive Solution: Either the header material and the item material are the same or the header material is a component of its item material. You can allow recursive BOM through clicking on the item material and tick on the Recursive Allowed Unable to Determine Valid Bill of Materials Solution: Master Data Alignment- No Bill of Materials created for the header Material",
+		"col5": "M1 - Foreground error log monitoring M2 - Monitoring on Table MAST or Transaction CS03 for existing Production BoM - as a Business KPI - Not required in first phase",
+		"col6": "Error with Bill of Materials (FP#B2)",
+		"col7": "R1- Material Master not existing in ECC R2 - Material BOM usage not inputted correctly by the user",
+		"col8": "1- Master Data Alignment - No Bill of Materials created or Maintained 2- Check for Recursive BoM  Error Codes CO636 - BOM does not contain any valid items C2242 - BOM for planned order &1 not valid for orders C2257 - Material &1 is not copied due to mat.status &2 (&3)CO635 - BOM item & deleted due to invalid item category &29003 - Alternative & already exists29004 - Alternative & does not exist29014 - Enter BOM group or material/usage29027 - You are not authorized to create new alternatives for this BOM29032 - BOM for material & deleted29052 - Valid-from date is in the past",
+		"col9": "Production Master Data - Bill of Materials",
+		"col10": "Error Log Monitoring",
+		"col11": "1. Sales Loss :  No2. Month End Impact : No3. Production Impact : Yes "
+	},{
+		"col1": "Production Master Data",
+		"col2": "Production Master Data- Routing",
+		"col3": "CA01/CA02/CA03",
+		"col4": "Input: Material No., Plant, Group Output: Production Routing Created/Changed or Displayed No Routing Selected Solution: Master Data Alignment",
+		"col5": "M1 - Error log monitoring at application layer during transaction execution M2 - Monitoring of table PLPO or transaction CA03 for existing Routings/ Task List - Business KPI - Not required in first phase",
+		"col6": "Error with Production Routing  (FP#B2)",
+		"col7": "R1- Master Data Issue/ Activity type not existing in ECC R2 - Activity type pricing not maintained through KP26",
+		"col8": "1-  Master Data Alignment - No Routings created or Maintained 1- Check assigned Routing Number in the  Material Production Version- MRP4 & Work Scheduling views. 2 - Check activity types prices in KP26 Error Codes CO230 - Operation cannot be released  CO238 - Routing application is not defined for routing type  CO240 - No routing selection possible (check entry) CO233 - Only standard sequence can be used as reference for alternative sequences",
+		"col9": "Production Master Data - Routings",
+		"col10": "Error Log Monitoring",
+		"col11": "1. Sales Loss :  No2. Month End Impact : No3. Production Impact : Yes "
+	},{
+		"col1": "Production Master Data",
+		"col2": "Production Master Data- Work Centers",
+		"col3": "CA01/CA02/CA03",
+		"col4": "Input: Plant, Work Center Name, Work Center Category Output: Production Work Center Created/Changed or Displayed  No working/operating time maintained in work center for scheduling Solution: Master Data Alignment",
+		"col5": "M1 - Error log monitoring at application layer during transaction execution M2 - Monitoring of table PLPO or transaction CA03 for existing Routings/ Task List - Business KPI - Not required in first phase",
+		"col6": "Error with Work Centers  (FP#B2)",
+		"col7": "R1- Master Data Issue/ Activity type not existing in ECC R2 - Activity type pricing not maintained through KP26",
+		"col8": "1-  Master Data Alignment- Check Capacity Category specified in the Work center & Control Key 1-  Master Data Alignment- Check Work Center Scheduling Tab  Error Codes C2335 - In operation & of sequence & work center & in plant & is locked CO070 - Work scheduling data of material & is not maintained CO214 - Work center & in plant & is marked for deletion  RU547 - A lock was set for work center & plant and RU548 - A deletion flag was set for work center & in plant &",
+		"col9": "Production Master Work centre",
+		"col10": "Error Log Monitoring",
+		"col11": "1. Sales Loss :  No2. Month End Impact : No3. Production Impact : Yes "
+	},{
+		"col1": "Production Master Data",
+		"col2": "Production Master Data- Production Versions",
+		"col3": "C223",
+		"col4": "Input: Plant, Work Center Name, Work Center Category Output: Production Work Center Created/Changed or Displayed  No working/operating time maintained in work center for scheduling Solution: Master Data Alignment",
+		"col5": "M1 - Error log monitoring at application layer during transaction execution M2 - Monitoring of table PLPO or transaction CA03 for existing Routings/ Task List - Business KPI - Not required in first phase",
+		"col6": "Error with Work Centers  (FP#B2)",
+		"col7": "R1- Master Data Issue/ Activity type not existing in ECC R2 - Activity type pricing not maintained through KP26",
+		"col8": "1-  Master Data Alignment- Check Capacity Category specified in the Work center & Control Key 1-  Master Data Alignment- Check Work Center Scheduling Tab  Error Codes C2335 - In operation & of sequence & work center & in plant & is locked CO070 - Work scheduling data of material & is not maintained CO214 - Work center & in plant & is marked for deletion  RU547 - A lock was set for work center & plant and RU548 - A deletion flag was set for work center & in plant &",
+		"col9": "Production Master Work centre",
+		"col10": "Error Log Monitoring",
+		"col11": "1. Sales Loss :  No2. Month End Impact : No3. Production Impact : Yes "
+	},{
+		"col1": "Production Master Data",
+		"col2": "Production Order Creation",
+		"col3": "CO40 & CO01/CO02/CO03",
+		"col4": "Input: Plant, Work Center Name, Work Center Category Output: Production Work Center Created/Changed or Displayed  No working/operating time maintained in work center for scheduling Solution: Master Data Alignment",
+		"col5": "M1 - Error log monitoring at application layer during transaction execution M2 - Monitoring of table PLPO or transaction CA03 for existing Routings/ Task List - Business KPI - Not required in first phase",
+		"col6": "Error with Work Centers  (FP#B2)",
+		"col7": "R1- Master Data Issue/ Activity type not existing in ECC R2 - Activity type pricing not maintained through KP26",
+		"col8": "1-  Master Data Alignment- Check Capacity Category specified in the Work center & Control Key 1-  Master Data Alignment- Check Work Center Scheduling Tab  Error Codes C2335 - In operation & of sequence & work center & in plant & is locked CO070 - Work scheduling data of material & is not maintained CO214 - Work center & in plant & is marked for deletion  RU547 - A lock was set for work center & plant and RU548 - A deletion flag was set for work center & in plant &",
+		"col9": "Production Master Work centre",
+		"col10": "Error Log Monitoring",
+		"col11": "1. Sales Loss :  No2. Month End Impact : No3. Production Impact : Yes "
+	}]
+}

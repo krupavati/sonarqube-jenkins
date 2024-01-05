@@ -1,0 +1,76 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:m="sap.m"
+		controllerName="PF.controllers.search_view" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showHeader="false" class="secondPageBG">
+		<content>
+		<Image xmlns="sap.m" class="headerImage"
+	src="images/header.png"
+	width="100%"
+	height=""
+	decorative="true"
+	>
+</Image>
+<HBox class="PFHeaderText">
+<Panel xmlns="sap.m" class="headerImage1"
+	backgroundDesign="Solid"
+	expand="">
+		<content>
+		<Image xmlns="sap.m" 
+	src="images/Unilever-logo.png"
+	width="5rem"
+	height="5rem"
+	decorative="true"
+	>
+</Image>
+		</content>
+</Panel>
+
+
+<VBox class="PFHeaderrText">
+<Label text="UNILEVER IMMUNE SYSTEM" class="PFheaderText PFheaderText1"/>
+
+</VBox>
+</HBox>
+<HBox class="hboxSearch">
+ <Image xmlns="sap.m"
+	class="imageClass"
+	src="images/search.PNG"
+	width="auto"
+	height="auto"
+	activeSrc=""
+	mode="Image"
+	backgroundSize="cover"
+	backgroundPosition="initial"
+	backgroundRepeat="no-repeat"
+	tap=""
+	press="SearchPress">
+		<tooltip></tooltip> 
+		<dependents></dependents> 
+		</Image> 
+		
+		
+		<Image xmlns="sap.m"
+	class="imageClass sapUiLargeMarginBegin"
+	src="images/view_all.PNG"
+	width="auto"
+	height="90%"
+	activeSrc=""
+	mode="Image"
+	backgroundSize="cover"
+	backgroundPosition="initial"
+	backgroundRepeat="no-repeat"
+	tap=""
+	press="viewALlPress">
+		<tooltip></tooltip> 
+		<dependents></dependents> 
+		</Image>
+
+</HBox>
+
+
+	
+
+
+		
+		</content>
+	</Page>
+</core:View>

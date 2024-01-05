@@ -1,0 +1,35 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		showHeader="false"
+		class=""
+		placement="VerticalPreferredTop"
+			initialFocus="email">
+		<content>
+		<Panel xmlns="sap.m" class="sapUiNoContentPadding">
+		<content>
+		 <Toolbar xmlns="sap.m" class="errorPOPup" height="2rem"
+		>
+		<content>
+		<ToolbarSpacer/>
+		<Label text="Error"/>
+		<ToolbarSpacer/>
+		<Icon xmlns="sap.ui.core"
+	src="sap-icon://sys-cancel"
+	press="closeErrorPOpUP">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</Icon>
+
+		</content> <!-- sap.ui.core.Control -->
+		</Toolbar>
+		<Label text="Please fill the mandatory fields" class="sapUiTinyMarginBeginEnd sapUiMediumMarginTopBottom"/>
+		</content> 
+		</Panel>
+		</content> 
+		
+	</Popover>
+</core:FragmentDefinition>
+
+

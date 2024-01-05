@@ -1,0 +1,11 @@
+[{
+	"summary": "UIS001",
+	"identifier": "GRNCS",
+	"task": "PCC",
+	"order": 1,
+	"sub_process": "PCCP",
+	"system": "CLM",
+	"process": "SP",
+	"function": "SC",
+	"landscape": "Fusion"
+}]

@@ -1,0 +1,7 @@
+{
+  "data": [{
+    "status": "red",
+    "kpi": "Order stuck in queue",
+    "value": 18
+  }]
+}

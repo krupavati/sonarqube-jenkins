@@ -1,0 +1,80 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Dialog xmlns="sap.m" title="" busy="false" stretch="false" showHeader="false" id="idsearchPOP"
+   class="sapUiNoContentPadding searchPopup">
+   <customHeader>
+   
+ 
+	<Toolbar xmlns="sap.m" id="idToolSearch"
+	width="100%" 
+	active="false"
+	enabled="true"
+	height="3rem"
+	design="Auto">
+		<content>
+		<ToolbarSpacer />
+		<Label id="idHeaderText"  class=""/>
+		<ToolbarSpacer /> 
+		<Icon xmlns="sap.ui.core" height="1rem" class="sapUiTinyMarginEnd"
+	src="sap-icon://decline" 
+	press="closeSearchPOP">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</Icon>
+
+		</content> 
+</Toolbar>	
+
+
+   
+   
+   
+   </customHeader>
+    <content>
+    
+	<List xmlns="sap.m" id="idSearchList" 
+	noDataText="Loading..."
+	showNoData="true"
+	busyIndicatorDelay="500"
+	enableBusyIndicator="true"
+	modeAnimationOn="true"
+	
+	
+	showSeparators="All"
+	swipeDirection="Both"
+	growing="false"
+	growingThreshold="20"
+	growingTriggerText=""
+	growingScrollToLoad="false"
+	rememberSelections="true"
+	backgroundDesign="Solid" 
+	>
+	
+	<!-- <items> 
+			<DisplayListItem xmlns="sap.m" class="" id="idsearchDisplay"
+	type="Active"
+	label=""
+	press=""
+	>
+</DisplayListItem>
+		</items> -->
+		
+</List>
+<!-- items="{search>/d/results}" -->
+
+  
+      
+    </content>
+    <!-- <buttons> 
+<Button xmlns="sap.m"
+	text="Close"
+	type="Default"
+	press="closeSearchPOP">
+</Button>
+
+
+		</buttons> -->
+
+  </Dialog>
+</core:FragmentDefinition>

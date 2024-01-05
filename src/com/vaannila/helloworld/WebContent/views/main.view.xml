@@ -1,0 +1,96 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:m="sap.m"
+		controllerName="PF.controllers.main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showHeader="false" class="PFmainPage">
+		<content>
+		<Image xmlns="sap.m" class="headerImage"
+	src="images/header.png"
+	width="100%"
+	height=""
+	decorative="true"
+	>
+</Image>
+<HBox class="PFHeaderText">
+<Panel xmlns="sap.m" class="headerImage1"
+	backgroundDesign="Solid"
+	expand="">
+		<content>
+		<Image xmlns="sap.m" 
+	src="images/Unilever-logo.png"
+	width="5rem"
+	height="5rem"
+	decorative="true"
+	>
+</Image>
+		</content>
+</Panel>
+
+
+<VBox class="PFHeaderrText">
+<Label text="UNILEVER IMMUNE SYSTEM" class="PFheaderText PFheaderText1"/>
+
+</VBox>
+</HBox>
+
+
+
+
+	
+<Toolbar xmlns="sap.m" class="sapUiSmallMarginTop PFtoolbarBorder"
+	width="100%"
+	active="false"
+	enabled="true"
+	height="3rem"
+	design="Auto">
+		<content>
+		<Button xmlns="sap.m" class="sapUiSmallMarginBegin"
+	icon="sap-icon://nav-back"
+	type="Default"
+	press="BackPressed">
+</Button> 
+<Button xmlns="sap.m" icon="sap-icon://home"
+	type="Default"
+	press="homePressed">
+</Button>
+
+		<ToolbarSpacer />
+		<ToolbarSpacer />	
+		<ToolbarSpacer />	
+		<Label text="xyz" id="idHeader" class=" PFlabelFont"/>
+		<ToolbarSpacer />
+		<ToolbarSpacer />
+		<ToolbarSpacer />
+		
+<Button xmlns="sap.m" icon="sap-icon://activity-items"
+	text=""
+	type="Default"
+	press="countPressed">
+</Button>		
+<Button xmlns="sap.m" icon="sap-icon://hint"
+	text=""
+	type="Default"
+	press="infoPressed">
+</Button>
+<Button xmlns="sap.m" icon="sap-icon://list"
+	type="Default"
+	press="listPressed">
+</Button>
+<ToolbarSpacer />
+
+		</content> 
+</Toolbar>
+
+<ScrollContainer xmlns="sap.m" id="idScrollCon" class="border"
+	width="auto"
+	height="35rem"
+	horizontal="true"
+	vertical="false"
+	focusable="false">
+		<content>
+	</content> 
+	</ScrollContainer>
+	
+
+		
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,123 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Dialog xmlns="sap.m" title="KPI list" stretch="false" showHeader="false" id="linkpopFragment"
+   class="sapUiNoContentPadding">
+    <content>
+    <Toolbar xmlns="sap.m" class="popUpHeader"
+	width="100%" 
+	active="false"
+	enabled="true"
+	height="3rem"
+	design="Auto">
+		<content>
+		<ToolbarSpacer />
+		<Label  text="Alerts"  />
+		<ToolbarSpacer />		
+		<Button xmlns="sap.m" icon="sap-icon://hint"
+		text=""
+		type="Default"
+		press="openInfoPressed">
+	</Button>
+	
+	<Button xmlns="sap.m" icon="images/Skype.png"
+	text=""
+	type="Default"
+	press="skypeForBusinessPressed">
+</Button>
+		</content> 
+</Toolbar>
+
+
+<Carousel xmlns="sap.m" pageChanged="pageChanged"
+	pages="{UISDetailModel>/CarlinkpopUpData}" loop="true">
+	<VBox>
+	<Toolbar xmlns="sap.m" 
+	width="100%" 
+	active="false"
+	enabled="true"
+	height="3rem"
+	design="Auto">
+		<content>
+		<HBox>
+		<Label text="Showing the details of the UIS Code - "/>
+		<Label  text="{UISDetailModel>uiscode}" />
+		</HBox>
+		<ToolbarSpacer />
+		<HBox tooltip="SLA clock - Time from ticket was raised">
+		
+		<Label id="timerTitle" text="Time Remaining" class="timerTitle"/>
+		<Text id="hrsLeft" class="timerFace"></Text>
+		<Text text=":" class="timerFaceSep" id="idDivider"></Text>
+		<Text id="minLeft" class="timerFace"></Text>
+		<Text id="secLeft" class="timerFace"></Text>
+		</HBox>
+		</content> 
+    </Toolbar>
+	
+		<Table  class="" 
+        inset="true" modal="true"
+        growing="true" growingThreshold="100">
+        <columns>
+              <Column width="auto" hAlign="Begin" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="Identifier" class=""/>
+              </Column>
+              <Column width="auto" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="TicketID"  class=""/>
+              </Column>
+
+              <Column width="auto" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="SUMMARY"  class=""/>
+              </Column>
+              
+              <Column width="auto" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                  <Text text="FIRST OCCURRENCE"  class=""/>
+              </Column>
+        </columns>
+        <items>
+          <ColumnListItem >
+            <cells>
+              <Text text="{UISDetailModel>Identifier}" class=""   />
+              <Text  text="{UISDetailModel>TicketID}" />
+				<Text  text="{UISDetailModel>Summary}" />
+				<Text  text="{UISDetailModel>FirstOccurrence}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+       
+      </Table>
+      
+     <Toolbar xmlns="sap.m"
+	width=""
+	active="false"
+	enabled="true"
+	height=""
+	design="Auto"
+	press="">
+		<content>
+		<Label text="Possible RCA" class="sapUiSmallMarginBegin"/>
+		</content> 
+	</Toolbar> 
+
+		<List xmlns="sap.m" items="{UISDetailModel>rca}">
+				<DisplayListItem xmlns="sap.m"
+			label="{UISDetailModel>rcalabel}"
+			>
+		</DisplayListItem>		
+		</List> 
+		</VBox>	
+</Carousel> 
+    </content>
+    <buttons> 
+   
+<Button xmlns="sap.m"
+	text="Close"
+	type="Default"
+	press="closepopUpPressed">
+</Button>
+
+
+		</buttons>
+
+  </Dialog>
+</core:FragmentDefinition>

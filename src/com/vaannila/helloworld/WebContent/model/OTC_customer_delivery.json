@@ -1,0 +1,128 @@
+[{
+    "id": 1,
+    "width": 100,
+    "height": 80,
+    "color":"#7A95D2",
+    "text":"ECC"
+     },{
+    "id": 2,
+    "width": 100,
+    "height": 80,
+    "color":"#D1B779",
+    "text":"ECC Customer Delivery  Process"
+     },{
+    "id": 3,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Outbound Delivery creation(manual/job/automatic upon creation of sales order)VL01n"
+     },{
+    "id": ["SOTC26X1T1","SOTC26X1T2"],
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Delivery due list processing VL10a/job"
+     },{
+    "id": 5,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Haulier Determination(in case NOT OTM relevant)"
+     },{
+    "id": 6,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Delivery Splitting(if applicable)"
+     },{
+    "id": 7,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Availability Checking"    
+     },{
+    "id": ["SOTC26X3T3","SOTC26X3T4","SOTC26X3T5"],
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Delivery instruction Z003 (WMS190 /I003)"    
+     },{
+    "id": 9,
+    "width": 100,
+    "height": 80,
+    "color":"#7A95D2",
+    "text":"OTM"    
+     },{
+    "id": 10,
+    "width": 100,
+    "height": 80,
+    "color":"#D1B779",
+    "text":"Interface Delivery to OTM"    
+     },{
+    "id": ["SOTC26X2T6","SOTC26X2T9"],
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Delivery sent to OTM (ZETM/TPSDLS)"    
+     },{
+    "id": 12,
+    "width": 100,
+    "height": 80,
+    "color":"#D1B779",
+    "text":"OTM Shipment Interface"    
+     },{
+    "id": 13,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Shipment created in ECC(SHIPPL)"    
+     },{
+    "id": 14,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Shipment Update to ECC(SHIPPL)"    
+     },{
+    "id": 15,
+    "width": 100,
+    "height": 80,
+    "color":"#D1B779",
+    "text":"ECC Receiving Process"    
+     },{
+    "id": "SOTC26X4T8",
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Goods Issue  (WMS200/I006)"    
+     },{
+    "id": "SOTC26X5U3",
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Trigger ZACT output"    
+     },{
+    "id": "SOTC26X5U3",
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Creation of On-time Idoc"    
+     },{
+    "id": 15,
+    "width": 100,
+    "height": 80,
+    "color":"#D1B779",
+    "text":"Interface Actuals idoc to OTM"    
+     },{
+    "id": 15,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"Actuals Idoc sent to OTM(ZSH3)"    
+     },{
+    "id": 15,
+    "width": 100,
+    "height": 80,
+    "color":"#2E8B57",
+    "text":"On-time Idoc sent to OTM"    
+     }
+]
